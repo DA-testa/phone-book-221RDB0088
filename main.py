@@ -8,12 +8,9 @@ class Query:
             self.name = query[2]
 
 def read_queries():
-    n = input()
-   # return [Query(input().split()) for i in range(n)]
-    query = n.split()
-    kverijs = query[0]
-    numurs = int(query[1])
-    vards = query[2]
+    n = int(input())
+    return [Query(input().split()) for i in range(n)]
+   
 
 
 def write_responses(result):
