@@ -10,6 +10,8 @@ class Query:
 def read_queries():
     n = int(input())
     return [Query(input().split()) for i in range(n)]
+   
+
 
 def write_responses(result):
     print('\n'.join(result))
@@ -44,4 +46,3 @@ def process_queries(queries):
 
 if __name__ == '__main__':
     write_responses(process_queries(read_queries()))
-
